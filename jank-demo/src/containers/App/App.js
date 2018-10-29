@@ -23,7 +23,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    for (let index = 0; index < 200; index++) {
+    for (let index = 0; index < 2000; index++) {
       const file = {
         id: index,
         name: `Janky-${index}`,
