@@ -1,0 +1,55 @@
+.upload-progress {
+  width: 500px;
+  position: fixed;
+  bottom: 24px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition-timing-function: ease-out;
+  transition: 0.4s;
+  transform: translateY(0%);
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+.upload-progress__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 1.4;
+  padding: 16px;
+  /* color: grey; */
+}
+.upload-progress__content__message__icon {
+  padding-right: 8px;
+}
+.upload-progress__content__message .upload-percent {
+  margin-left: 8px;
+}
+.upload-progress__content__message--success {
+  color: green;
+  margin-right: 8px;
+}
+.upload-progress__content__message--fail {
+  color: red;
+  margin-right: 8px;
+}
+.upload-progress__content__close {
+  width: 16px;
+  color: grey;
+  border: none;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+.upload-progress__bar {
+  line-height: 0;
+}
+.upload-progress__bar .ant-progress-bg {
+  border-bottom-left-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
